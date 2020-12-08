@@ -12,17 +12,18 @@ export class VaultController {
   }
 
   @Get('fetch/:ns')
-  fetch(@Param(':ns') ns: NameSpace) {
+  fetch(@Param('ns') ns: NameSpace) {
     return this.service.fetch(ns);
   }
 
   @Post('store/:ns')
-  store(@Param(':ns') ns: NameSpace, @Body() vault: Vault) {
+  store(@Param('ns') ns: NameSpace, @Body() vault: Vault) {
+    console.log('store', ns, vault);
     return this.service.store(ns, vault);
   }
 
   @Delete('flush/:ns')
-  flush(@Param(':ns') ns: NameSpace) {
+  flush(@Param('ns') ns: NameSpace) {
     return this.service.flush(ns);
   }
 }

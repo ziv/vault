@@ -3,10 +3,16 @@ import { NameSpace, Vault, vaultCreatedKey } from '@xpr/vaultier';
 
 @Injectable()
 export class VaultService {
-  private storage = new Map<NameSpace, Vault>();
+  public storage = new Map<NameSpace, Vault>();
 
-  status(): string[] {
-    return [...this.storage.keys()];
+  status(): any {
+    const status = [];
+    for (const [key, value] of this.storage.entries()) {
+      const created = value[vaultCreatedKey];
+      const count = Object.keys(value).length - 1;
+      status.push({ key, created, count });
+    }
+    return status;
   }
 
   store(ns: NameSpace, vault: Vault) {
