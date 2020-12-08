@@ -2,6 +2,7 @@
 vault/node_modules
 vaultage/node_modules
 vaultier/node_modules
+lib
 
 # compiled output
 /dist
