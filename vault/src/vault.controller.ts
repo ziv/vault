@@ -18,7 +18,6 @@ export class VaultController {
 
   @Post('store/:ns')
   store(@Param('ns') ns: NameSpace, @Body() vault: Vault) {
-    console.log('store', ns, vault);
     return this.service.store(ns, vault);
   }
 

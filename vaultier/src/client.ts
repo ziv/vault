@@ -6,15 +6,14 @@ export class Vaultier {
   }
 
   async store(ns: NameSpace, vault: Vault) {
-    console.log(`${this.base}/store/${ns}`);
-    return axios.post(`${this.base}/store/${ns}`, vault);
+    return axios.post<boolean>(`${this.base}/store/${ns}`, vault);
   }
 
-  async fetch(ns: NameSpace, vault: Vault) {
-    return axios.get(`${this.base}/fetch/${ns}`);
+  async fetch(ns: NameSpace) {
+    return axios.get<Vault>(`${this.base}/fetch/${ns}`);
   }
 
-  async flush(ns: NameSpace, vault: Vault) {
-    return  axios.delete(`${this.base}/flush/${ns}`);
+  async flush(ns: NameSpace) {
+    return axios.delete<boolean>(`${this.base}/flush/${ns}`);
   }
 }
