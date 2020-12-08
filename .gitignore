@@ -1,4 +1,7 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
+vault/node_modules
+vaultage/node_modules
+vaultier/node_modules
 
 # compiled output
 /dist

@@ -1,9 +1,10 @@
 {
-  "name": "@xpr/vault",
+  "name": "vault",
   "version": "1.0.0",
   "description": "Local memory cache impl. for development",
   "main": "index.js",
   "scripts": {
+    "build": "./build.sh",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
