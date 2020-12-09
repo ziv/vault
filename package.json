@@ -1,6 +1,6 @@
 {
   "name": "@xpr/vault",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "license": "MIT",
   "description": "Local in memory server for development",
   "author": "Ziv",
@@ -34,7 +34,6 @@
     "@nestjs/serve-static": "^2.1.4",
     "@xpr/vaultier": "^1.0.0",
     "reflect-metadata": "^0.1.13",
-    "rimraf": "^3.0.2",
     "rxjs": "^6.6.3"
   },
   "devDependencies": {
@@ -52,6 +51,7 @@
     "eslint-plugin-prettier": "^3.1.4",
     "jest": "^26.6.3",
     "prettier": "^2.1.2",
+    "rimraf": "^3.0.2",
     "supertest": "^6.0.0",
     "ts-jest": "^26.4.3",
     "ts-loader": "^8.0.8",
