@@ -1,10 +1,14 @@
 {
   "name": "@xpr/vault",
   "version": "0.0.1",
-  "description": "",
-  "author": "",
-  "private": true,
   "license": "MIT",
+  "description": "Local in memory server for development",
+  "author": "Ziv",
+  "homepage": "https://github.com/ziv/vault",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ziv/vault.git"
+  },
   "bin": {
     "vault-server": "./lib/main.js"
   },
