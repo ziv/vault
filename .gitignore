@@ -1,17 +1,23 @@
-# See http://help.github.com/ignore-files/ for more about ignoring files.
-vault/node_modules
-vaultage/node_modules
-vaultier/node_modules
-lib
-
 # compiled output
 /dist
-/tmp
-/out-tsc
-/old
-
-# dependencies
 /node_modules
+
+vaultage
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# OS
+.DS_Store
+
+# Tests
+/coverage
+/.nyc_output
 
 # IDEs and editors
 /.idea
@@ -28,17 +34,3 @@ lib
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
-
-# misc
-/.sass-cache
-/connect.lock
-/coverage
-/libpeerconnection.log
-npm-debug.log
-yarn-error.log
-testem.log
-/typings
-
-# System Files
-.DS_Store
-Thumbs.db
